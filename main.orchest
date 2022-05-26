@@ -9,7 +9,7 @@
             "exposed": true,
             "image": "httpd",
             "name": "httpd",
-            "order": 122,
+            "order": 153,
             "ports": [
                 80
             ],
@@ -26,6 +26,48 @@
         "data_passing_memory_size": "1GB"
     },
     "steps": {
+        "04165484-1b9f-441d-88c3-9116da53df2b": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "analyze-data-polars.ipynb",
+            "incoming_connections": [
+                "f3be9752-013f-4385-b9de-d05540a13b5f"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    810.5,
+                    80
+                ]
+            },
+            "parameters": {},
+            "title": "Analyze data with Polars",
+            "uuid": "04165484-1b9f-441d-88c3-9116da53df2b"
+        },
+        "155a0bed-8a63-42c2-9571-1da95003900c": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "memory-map-pyarrow.ipynb",
+            "incoming_connections": [
+                "f3be9752-013f-4385-b9de-d05540a13b5f"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    810.5,
+                    615.5
+                ]
+            },
+            "parameters": {},
+            "title": "memory-map with PyArrow",
+            "uuid": "155a0bed-8a63-42c2-9571-1da95003900c"
+        },
         "54551a6f-6ae8-4b09-948e-04746c6ce5d0": {
             "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
             "file_path": "fetch_stackoverflow_data.sh",
@@ -37,13 +79,34 @@
             "meta_data": {
                 "hidden": false,
                 "position": [
-                    283.5,
-                    437
+                    283.50000000000006,
+                    169.25
                 ]
             },
             "parameters": {},
             "title": "Fetch Stack Overflow data",
             "uuid": "54551a6f-6ae8-4b09-948e-04746c6ce5d0"
+        },
+        "7f7aa88b-ebbd-412f-bf4d-bf1feb21ae87": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "analyze-data-vaex.ipynb",
+            "incoming_connections": [
+                "f3be9752-013f-4385-b9de-d05540a13b5f"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    810.5,
+                    436.99999999999994
+                ]
+            },
+            "parameters": {},
+            "title": "Analyze data with Vaex",
+            "uuid": "7f7aa88b-ebbd-412f-bf4d-bf1feb21ae87"
         },
         "83732320-a1fa-418c-8971-21a2d55dc137": {
             "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
@@ -56,13 +119,34 @@
             "meta_data": {
                 "hidden": false,
                 "position": [
-                    283.50000000000006,
-                    80
+                    283.49999999999994,
+                    347.75
                 ]
             },
             "parameters": {},
             "title": "Fetch Taxi data",
             "uuid": "83732320-a1fa-418c-8971-21a2d55dc137"
+        },
+        "929062f4-4061-4076-a69c-17466fb2df5a": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "load-data-pyarrow.ipynb",
+            "incoming_connections": [
+                "f3be9752-013f-4385-b9de-d05540a13b5f"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    810.5,
+                    258.5
+                ]
+            },
+            "parameters": {},
+            "title": "Load data with PyArrow",
+            "uuid": "929062f4-4061-4076-a69c-17466fb2df5a"
         },
         "c504d41e-3068-4239-a901-c19c5a28c1bb": {
             "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
@@ -77,8 +161,8 @@
             "meta_data": {
                 "hidden": false,
                 "position": [
-                    283.5,
-                    258.5
+                    283.49999999999994,
+                    526.25
                 ]
             },
             "parameters": {},
@@ -97,7 +181,7 @@
                 "hidden": false,
                 "position": [
                     20,
-                    258.5
+                    347.75
                 ]
             },
             "parameters": {},
@@ -120,7 +204,7 @@
                 "hidden": false,
                 "position": [
                     547,
-                    258.49999999999994
+                    347.74999999999994
                 ]
             },
             "parameters": {},
