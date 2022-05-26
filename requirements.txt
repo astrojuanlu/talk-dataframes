@@ -1,0 +1,9 @@
+aiohttp
+jupyterlab
+kaggle
+pandas
+polars==0.13.38
+pyarrow==7.0
+requests
+vaex-core==4.9.0
+vaex-viz

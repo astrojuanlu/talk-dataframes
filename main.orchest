@@ -1,0 +1,133 @@
+{
+    "name": "Main",
+    "parameters": {},
+    "services": {
+        "httpd": {
+            "binds": {
+                "/project-dir": "/usr/local/apache2/htdocs/"
+            },
+            "exposed": true,
+            "image": "httpd",
+            "name": "httpd",
+            "order": 122,
+            "ports": [
+                80
+            ],
+            "preserve_base_path": false,
+            "requires_authentication": true,
+            "scope": [
+                "interactive",
+                "noninteractive"
+            ]
+        }
+    },
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "54551a6f-6ae8-4b09-948e-04746c6ce5d0": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "fetch_stackoverflow_data.sh",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    283.5,
+                    437
+                ]
+            },
+            "parameters": {},
+            "title": "Fetch Stack Overflow data",
+            "uuid": "54551a6f-6ae8-4b09-948e-04746c6ce5d0"
+        },
+        "83732320-a1fa-418c-8971-21a2d55dc137": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "fetch_taxi_data.sh",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    283.50000000000006,
+                    80
+                ]
+            },
+            "parameters": {},
+            "title": "Fetch Taxi data",
+            "uuid": "83732320-a1fa-418c-8971-21a2d55dc137"
+        },
+        "c504d41e-3068-4239-a901-c19c5a28c1bb": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "convert_airline_data.ipynb",
+            "incoming_connections": [
+                "eed5be03-d2fc-42b9-8480-a64e92b70a27"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    283.5,
+                    258.5
+                ]
+            },
+            "parameters": {},
+            "title": "Convert Airline data",
+            "uuid": "c504d41e-3068-4239-a901-c19c5a28c1bb"
+        },
+        "eed5be03-d2fc-42b9-8480-a64e92b70a27": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "fetch_airline_data.sh",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    20,
+                    258.5
+                ]
+            },
+            "parameters": {},
+            "title": "Fetch Airline data",
+            "uuid": "eed5be03-d2fc-42b9-8480-a64e92b70a27"
+        },
+        "f3be9752-013f-4385-b9de-d05540a13b5f": {
+            "environment": "fa87a1fd-af2e-44a9-9ea2-3da408cc4b3a",
+            "file_path": "wait_downloads.sh",
+            "incoming_connections": [
+                "c504d41e-3068-4239-a901-c19c5a28c1bb",
+                "83732320-a1fa-418c-8971-21a2d55dc137",
+                "54551a6f-6ae8-4b09-948e-04746c6ce5d0"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    547,
+                    258.49999999999994
+                ]
+            },
+            "parameters": {},
+            "title": "Wait for downloads",
+            "uuid": "f3be9752-013f-4385-b9de-d05540a13b5f"
+        }
+    },
+    "uuid": "25e3c644-6501-4644-b856-deee5840570f",
+    "version": "1.2.0"
+}

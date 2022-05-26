@@ -1,0 +1,3 @@
+pipelines/*/logs/
+pipelines/*/data/
+plasma.sock
