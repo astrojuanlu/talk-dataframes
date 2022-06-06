@@ -4,6 +4,8 @@ Talk "Beyond pandas: The great Python dataframe showdown" plus demo Orchest pipe
 
 [![Open in Orchest](https://github.com/orchest/orchest-examples/raw/main/imgs/open_in_orchest.svg)](https://cloud.orchest.io/?import_url=https://github.com/astrojuanlu/talk-dataframes/)
 
+Slides: https://nbviewer.org/format/slides/github/astrojuanlu/talk-dataframes/blob/main/slides.ipynb
+
 Experiments with Polars in Orchest.
 
 ![Pipeline visualization](https://pviz.orchest.io/?pipeline=https://github.com/astrojuanlu/talk-dataframes/blob/master/main.orchest)
