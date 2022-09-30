@@ -1,26 +1,7 @@
 {
     "name": "Main",
     "parameters": {},
-    "services": {
-        "httpd": {
-            "binds": {
-                "/project-dir": "/usr/local/apache2/htdocs/"
-            },
-            "exposed": true,
-            "image": "httpd",
-            "name": "httpd",
-            "order": 153,
-            "ports": [
-                80
-            ],
-            "preserve_base_path": false,
-            "requires_authentication": true,
-            "scope": [
-                "interactive",
-                "noninteractive"
-            ]
-        }
-    },
+    "services": {},
     "settings": {
         "auto_eviction": false,
         "data_passing_memory_size": "1GB"
